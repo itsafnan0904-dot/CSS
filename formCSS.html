@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled To-Do List</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main>
+
+  <ul class="todo-list">
+
+    <li>
+      <input type="checkbox" id="store-link">
+      <label for="store-link">Store Link</label>
+
+      <ul class="sub-item">
+        <li>
+          <a class="sub-item-link"
+             href="https://www.amazon.com"
+             target="_blank">
+             Visit Store
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <input type="checkbox" id="request-access">
+      <label for="request-access">Request Access</label>
+
+      <ul class="sub-item">
+        <li>
+          <a class="sub-item-link"
+             href="https://www.google.com"
+             target="_blank">
+             Request Access
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <input type="checkbox" id="view-receipts">
+      <label for="view-receipts">View Receipts</label>
+
+      <ul class="sub-item">
+        <li>
+          <a class="sub-item-link"
+             href="https://www.paypal.com"
+             target="_blank">
+             View Receipts
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <input type="checkbox" id="view-model-number">
+      <label for="view-model-number">View Model Number</label>
+
+      <ul class="sub-item">
+        <li>
+          <a class="sub-item-link"
+             href="https://www.apple.com"
+             target="_blank">
+             View Model
+          </a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+
+</main>
+
+</body>
+</html>
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.todo-list {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.sub-item {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Unvisited link */
+a:link {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Hover */
+a:hover {
+    color: red;
+}
+
+/* Keyboard focus */
+a:focus {
+    outline: 2px solid orange;
+}
+
+/* While clicking */
+a:active {
+    color: green;
+}
