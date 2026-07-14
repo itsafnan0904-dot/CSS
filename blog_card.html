@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Card</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="blog-post-card">
+
+    <img
+      class="post-img"
+      src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg"
+      alt="A laptop on a desk">
+
+    <div class="post-content">
+
+      <h2 class="post-title">
+        Learn HTML and CSS
+      </h2>
+
+      <p class="post-excerpt">
+        HTML and CSS are the building blocks of every website. Start learning today and build beautiful web pages.
+      </p>
+
+      <a href="https://www.freecodecamp.org" class="read-more">
+        Read More
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+}
+
+.blog-post-card {
+  background-color: white;
+  width: 350px;
+  margin: 50px auto;
+   border-top: 5px ;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.post-img {
+  width: 100%;
+  border-bottom: 3px solid gray;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title,
+.post-excerpt {
+  color: #333;
+  margin: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  color: white;
+  background-color: royalblue;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: darkblue;
+}
